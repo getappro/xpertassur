@@ -10,7 +10,7 @@
     'license': 'LGPL-3',
     'category': 'Sales',
     'data':[
-        
+        'views/assurance_sante.xml',
     ],
     #'images': ['static/description/sale-report-banner.png'],
     'price': 0.0,
