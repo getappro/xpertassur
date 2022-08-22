@@ -12,7 +12,7 @@ class AssuranceSanteCRM(models.Model):
     date_debut = fields.Date('Date de début de contrat')
     assure = fields.Selection([
         ('vous','Vous'),('couple','Vous et votre conjoint'),('enfants', 'Vous et vos enfants'),('famille','Vous, Votre Conjoint et Vos enfants')
-    ], string="Qui souhaite être assuré ?)
+    ], string="Qui souhaite être assuré ?")
     date_naissance_conjoint = fields.Date('Date de naissance du Conjoint')
     regime_social_conjoint = fields.Char('Régime Social du Conjoint')
     nbre_enfants = fields.Selection([
