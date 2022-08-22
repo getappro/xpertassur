@@ -7,21 +7,30 @@
         <field name="arch" type="xml">
             <page name="lead" position="after">
                 <page name="assurance_sante" string="Assurance Santé">
-                    <group name="profil" string="Profil">
-                        <field name="sexe"/>
-                        <field name="date_naissance"/>
-                        <field name="regime_social"/>
-                        <field name="date_debut"/>
-                        <field name="assure"/>
-                        <field name="date_naissance_conjoint"/>
-                        <field name="regime_social_conjoint"/>
-                        <field name="nbre_enfants"/>
-                        <field name="date_naissance_enfant1"/>
-                        <field name="date_naissance_enfant2"/>
-                        <field name="date_naissance_enfant3"/>
-                        <field name="date_naissance_enfant4"/>
-                        <field name="date_naissance_enfant5"/>
-                    </group>      
+                    <group>
+                        <group name="profil" string="Profil">
+                            <field name="sexe"/>
+                            <field name="date_naissance"/>
+                            <field name="regime_social"/>
+                            <field name="date_debut"/>
+                            <field name="assure"/>
+                            <field name="date_naissance_conjoint"/>
+                            <field name="regime_social_conjoint"/>
+                            <field name="nbre_enfants"/>
+                            <field name="date_naissance_enfant1"/>
+                            <field name="date_naissance_enfant2"/>
+                            <field name="date_naissance_enfant3"/>
+                            <field name="date_naissance_enfant4"/>
+                            <field name="date_naissance_enfant5"/>     
+                        </group>
+                        <group name="besoins" string="Besoins">
+                            <field name="soins_courant"/>
+                            <field name="hospitalisation"/>
+                            <field name="dentaire"/>
+                            <field name="optiques"/>
+                            <field name="accept_contact"/>
+                        </group>
+                    </group>
                 </page>
             </page>
         </field>
