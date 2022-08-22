@@ -12,14 +12,27 @@ class AssuranceSanteCRM(models.Model):
     date_debut = fields.Date('Date de début de contrat')
     assure = fields.Selection([
         ('vous','Vous'),('couple','Vous et votre conjoint'),('enfants', 'Vous et vos enfants'),('famille','Vous, Votre Conjoint et Vos enfants')
-    ])
+    ], string="Qui souhaite être assuré ?)
     date_naissance_conjoint = fields.Date('Date de naissance du Conjoint')
     regime_social_conjoint = fields.Char('Régime Social du Conjoint')
     nbre_enfants = fields.Selection([
         ('1','1'),('2','2'),('3','3'),('4','4'),('5','5')
-    ])
+    ], string="Nombre Enfants")
     date_naissance_enfant1 = fields.Date('Date de naissance - Enfant 1')
     date_naissance_enfant2 = fields.Date('Date de naissance - Enfant 2')
     date_naissance_enfant3 = fields.Date('Date de naissance - Enfant 3')
     date_naissance_enfant4 = fields.Date('Date de naissance - Enfant 4')
     date_naissance_enfant5 = fields.Date('Date de naissance - Enfant 5')
+    soins_courant = fields.Selection([
+        ('min','Minimum'),('moy','Moyen'),('fort','Fort'),('max','Miximum')
+    ], string="Soins Courants")
+    hospitalisation = fields.Selection([
+        ('min','Minimum'),('moy','Moyen'),('fort','Fort'),('max','Miximum')
+    ], string="Hôspitalisation")
+    dentaire = fields.Selection([
+        ('min','Minimum'),('moy','Moyen'),('fort','Fort'),('max','Miximum')
+    ], string="Dentaire")
+    optique = fields.Selection([
+        ('min','Minimum'),('moy','Moyen'),('fort','Fort'),('max','Miximum')
+    ], string="Optique")
+    accept_contact = fields.Boolean('Accept Appel Commercial')
