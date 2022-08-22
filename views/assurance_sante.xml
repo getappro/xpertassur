@@ -5,9 +5,25 @@
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_lead_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='contact_name']" position="after">
-                <field name="sexe"/>
-            </xpath>
+            <page name="lead" position="after">
+                <page name="assurance_sante" string="Assurance Santé">
+                    <group name="profil" string="Profil">
+                        <field name="sexe"/>
+                        <field name="date_naissance"/>
+                        <field name="regime_social"/>
+                        <field name="date_debut"/>
+                        <field name="assure"/>
+                        <field name="date_naissance_conjoint"/>
+                        <field name="regime_social_conjoint"/>
+                        <field name="nbre_enfants"/>
+                        <field name="date_naissance_enfant1"/>
+                        <field name="date_naissance_enfant2"/>
+                        <field name="date_naissance_enfant3"/>
+                        <field name="date_naissance_enfant4"/>
+                        <field name="date_naissance_enfant5"/>
+                    </group>      
+                </page>
+            </page>
         </field>
     </record>
 </odoo>
