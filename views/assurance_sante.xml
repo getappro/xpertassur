@@ -27,7 +27,7 @@
                             <field name="soins_courant"/>
                             <field name="hospitalisation"/>
                             <field name="dentaire"/>
-                            <field name="optiques"/>
+                            <field name="optique"/>
                             <field name="accept_contact"/>
                         </group>
                     </group>
